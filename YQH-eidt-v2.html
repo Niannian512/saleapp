@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<link rel="stylesheet" href="css/yqh.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>推广-邀请函-编辑</title>
+	</head>
+
+	<body style='background:#f2f2f2;'>
+		<div class="container">
+			<!--公共的title-->
+			<header class="topbar">
+				<a href="javascript:;" id="hdId" onclick="goBack()" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">邀请函内容填写</span>
+			</header>
+			<form action="">
+				<section class="yqhedit">
+					<div class="form-group">
+						<label for="">活动名称</label>
+						<input type="text" placeholder="第三届电子展览会"/>
+					</div>
+					<div class="form-group">
+						<label for="">活动时间</label>
+						<input type="text" placeholder="2017/08/01 13:00"/>
+					</div>
+					<div class="form-group">
+						<label for="">活动地点</label>
+						<input type="text" placeholder="朝阳区建外soho东区3号楼1903"/>
+					</div>
+					<div class="form-group">
+						<label for="">发起单位</label>
+						<input type="text" placeholder="北京众科互联科技集团有限公司"/>
+					</div>
+				</section>
+				<section class="yqhedit">
+					<div class="form-group">
+						<label for="">开头尊称</label>
+						<input type="text" placeholder="尊敬的女士/先生"/>
+					</div>
+					<div class="form-group">
+						<label for="">活动简介</label>
+						<textarea maxlength="280" placeholder="例如：本次活动的主题是推出由众科互联科技有限公司所研发的科技产品营销人APP的发布会，此次发布会所推出的APP是有众科互联科技有限公司设计师以春天为主题，以秋冬过往为灵感，故在夏季来临之际，强势推出此APP。让您感受到营销人APP的强势魔力。（注：内容部分不能超过280个字符）"></textarea>
+					</div>
+				</section>
+				<section class="yqhedit">
+					<div class="form-group clearfix">
+						<label for="">活动流程</label>
+						<table class="steptable">
+							<tr>
+								<td><label for="">时间：</label><input type="text" placeholder="13:00"/></td>
+								<td><label for="">流程：<input type="text" placeholder="签到"/></td>
+							</tr>
+							<tr>
+								<td><label for="">时间：</label><input type="text" placeholder="13:20"/></td>
+								<td><label for="">流程：</label><input type="text" placeholder="入座"/></td>
+							</tr>
+							<tr>
+								<td><label for="">时间：</label><input type="text" placeholder="请填写"/></td>
+								<td><label for="">流程：</label><input type="text" placeholder="请填写"/></td>
+							</tr>
+						</table>
+						<div class="stepCtr text-right">
+							<button type="button" class="btn">-</button>
+							<button type="button" class="btn">+</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="">背景音乐</label>
+						<a href="javascript:;" class="jump">请选择背景音乐<i class="iconfont icon-arrowrh pull-right"></i></a>
+					</div>
+				</section>
+			    <div class="choseTemp"><input type="submit" class="btn" value="选择模板" /></div>
+			</form>
+			<script>
+				$(".stepCtr button:first-child").click(function(){
+					$(".steptable tr:last-child").remove();
+				})
+				$(".stepCtr button:last-child").click(function(){
+					$(".steptable").append('<tr><td><label>时间：</label><input type="text" placeholder="请填写"/></td><td><label>流程：</label><input type="text" placeholder="请填写"/></td></tr>');
+				})
+			</script>
+		</div>
+	</body>
+
+</html>

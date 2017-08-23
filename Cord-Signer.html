@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<link rel="stylesheet" type="text/css" href="css/generalie.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<script type="text/javascript" src="js/file.js"></script>
+		<title>推广-名片</title>
+	</head>
+
+	<body>
+		<div class="container Name-bg">
+			<!--公共的title-->
+			<header class="topbar">
+				<a href="##" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">个性签名</span>
+
+			</header>
+
+			<form action="">
+				<textarea type="text" class="Name-textarea" placeholder="请输入您的个性签名" id="TextareaYZ" /></textarea>
+				<input type="button" class="save" value="保存" onclick="checkall()" />
+			</form>
+
+		</div>
+		<script>
+			function checkall() {
+				var TextareaYZ = $("#TextareaYZ").val();
+				var reg4 = /(\r|\n|\r\n)/g;
+				if(TextareaYZ == "" || !reg4.test(TextareaYZ)) {
+					alert('请输入1—20位字符哦!');
+					alert($("#TextareaYZ").value.split(/\n/).length + '行');
+				} else {
+					$(this).submit();
+				}
+			}
+		</script>
+	</body>
+
+</html>

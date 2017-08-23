@@ -1,0 +1,738 @@
+/*邀请函-模板*/
+/*上滑翻页动态效果*/
+.u-arrow {
+    position: fixed;
+    bottom: 0.2rem;
+    left: 50%;
+    z-index: 150;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: -0.4rem;
+    text-align: center;
+}
+.u-arrow i {
+	display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.5rem 0 0 -0.4rem;
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size:0.8rem;
+    color:#eee;
+    -webkit-animation: start 1.3s infinite ease-in-out;
+    -moz-animation: start 1.3s infinite ease-in-out;
+    animation: start 1.3s infinite ease-in-out;
+}
+@-webkit-keyframes start{
+	from{
+		margin: -0.5rem 0 0 -0.4rem;
+	}
+	to{
+		margin: -0.7rem 0 0 -0.4rem;
+	}
+}
+@-moz-keyframes start{
+	from{
+		margin: -0.5rem 0 0 -0.4rem;
+	}
+	to{
+		margin: -0.7rem 0 0 -0.4rem;
+	}
+}
+@keyframes start{
+	from{
+		margin: -0.5rem 0 0 -0.4rem;
+	}
+	to{
+		margin: -0.7rem 0 0 -0.4rem;
+	}
+}
+
+
+
+
+
+
+
+
+.yqh-temp{
+	position:relative;
+	/*display:none;*/
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+.show{
+	display:block;
+}
+.yqh-temp .secInfo{
+	width:100%;
+	left:0;
+	position:absolute;
+	text-align:center;
+}
+.yqh-temp .aInfo{
+	font-size: 0.36rem;
+    color: #fff;
+    line-height: 1.8;
+    font-family: STXihei;
+}
+/*.yqh-temp .aInfo input,.yqh-temp .aInfo textarea*/.editArea input,.editArea textarea{
+	width:100%;
+	resize:none;
+	background:none;
+	border:none;
+	color:#fff;
+	text-align:center;
+}
+.thrArea input,.thrArea textarea{
+    color: #41921A;
+}
+.yqh-temp .keyTitle{
+	top:48%;
+}
+.secWrap{
+	background:url(../images/yqh/hello.png) no-repeat;
+	background-size:cover;
+	padding:3.4rem 1.05rem;
+}
+.secWrap .secInfo,.thrWrap .contactInfo{
+	font-size:0.36rem;
+	color:#fff;
+	line-height:1.8;
+	font-family: STXihei;
+}
+.hello-word{
+	text-indent: calc(15%);
+}
+.thrWrap{
+	position:relative;
+	background:url(../images/yqh/contact.png) no-repeat;
+	background-size:cover;
+	color:#fff;
+}
+.thrWrap .contactInfo{
+	position:absolute;
+	width:100%;
+	bottom:1rem;
+	text-align:center;
+}
+.thrWrap .contactInfo a.btn{
+	padding:0.2rem 0.38rem;
+	background:rgba(86,189,239,0.8);
+	color:#fff;
+	font-size:0.48rem;
+	border-radius:0.2rem;
+	margin-right:0.2rem;
+}
+.thrWrap .contactInfo a.btn .iconfont{
+	font-size:0.48rem;
+	margin-right:0.2rem;
+}
+
+.con2{
+	bottom:0.5rem;
+}
+.con2>div{
+	padding:0 0.2rem;
+	text-align:left;
+}
+.con2 p{
+	padding:0 0.3rem;
+}
+.con2 input{
+	border:none;
+	background:none;
+}
+.thrWrap .con2 a.btn{
+	display:inline-block;
+	width:35%;
+	padding:0.1rem;
+	font-size:0.42rem;
+}
+.con2 a input{
+	width:80%;
+}
+.con2 .address{
+	width:60%;
+}
+/*邀请函-模板二*/
+.yqh-temp2{
+	background:url(../images/yqh/ymark2.png) no-repeat;
+	background-size:cover;
+	color:#fff;
+}
+.yqh-temp2 .logo{
+	position:absolute;
+	width:2.08rem;
+	height:2.08rem;
+	border-radius:50%;
+	top:3.55rem;
+	left:2.75rem;
+}
+.yqh-temp2 .function{
+	position:absolute;
+	width:100%;
+	top:5.7rem;
+	font-size:0.36rem;
+	font-family: MSReferenceSansSerif;
+}
+.yqh-temp2 .year{
+	position:absolute;
+	top:7.3rem;
+	left:2.42rem;
+	font-family: Ebrima;
+	font-size:0.72rem;
+}
+.yqh-temp2b{
+	background:url(../images/yqh/hello2.png) no-repeat;
+	background-size:cover;
+	font-size:0.48rem;
+	color:#fff;
+	font-family:YouYuan;
+	padding:2.6rem 0.44rem 0 0.7rem;
+}
+.yqh-temp2b .call{
+	margin-bottom:0.76rem;
+}
+.yqh-temp2b .call:nth-of-type(2){
+	font-size:0.6rem;
+}
+.yqh-temp2b .spacil p:last-child{
+	font-family: Ebrima;
+	font-size:1rem;
+	line-height:0.8;
+}
+.yqh-temp2b .call:nth-of-type(4){
+	font-size:0.72rem;
+}
+.yqh-temp2b .call:nth-of-type(2n),.yqh-temp2b .call:nth-of-type(2n) input{
+	text-align:left;
+}
+.yqh-temp2b .call:nth-of-type(2n+1),.yqh-temp2b .call:nth-of-type(2n+1) input{
+	text-align:right;
+}
+.yqh-temp2c{
+	background:url(../images/yqh/contact2.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp2c .info{
+	position:absolute;
+	width:86%;
+	left:7%;
+	bottom:2%;
+	font-size:0.62rem;
+	font-family: STXihei;
+	color:#fff;
+}
+.yqh-temp2c .info p{
+	width:100%;
+}
+.yqh-temp2c .info p:nth-of-type(2n){
+	font-size:0.6rem;
+}
+.yqh-temp2c .info p:nth-of-type(3) span{
+	margin-left:0.2rem;
+}
+.yqh-temp3{
+	background:url(../images/yqh/ymark3.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp3 .logo{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:1.5rem;
+	font-size:0.48rem;
+	color:#41911a;
+	font-family: arial;
+}
+.yqh-temp3 .logo .logoName{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-1.5rem;
+	width:3rem;
+	height:1rem;
+	line-height:1rem;
+	border:2px solid #41911a;
+	border-top-left-radius:0.4rem;
+	border-bottom-right-radius:0.4rem;
+}
+.yqh-temp3 .logo span{
+	position:absolute;
+	top:1.3rem;
+	left:50%;
+	transform:translate3d(-50%,-50%,0);
+	-webkit-transform:translate3d(-50%,-50%,0);
+}
+.yqh-temp3b{
+	background:url(../images/yqh/hello3.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp3b .secInfo{
+	width:5.8rem;
+	left:50%;
+	margin-left:-2.8rem;
+	font-size:0.48rem;
+	font-family: simsun;
+	color:#41921A;
+	line-height:2;
+	top:30%;
+}
+.yqh-temp3c{
+	background:url(../images/yqh/contact3.png) no-repeat;
+	background-size:cover;
+}
+.temp3c-table{
+	position:absolute;
+	width:96%;
+	left:2%;
+	top:25%;
+	font-size:0.36rem;
+	color:#41921A;
+}
+.temp3c-table table caption{
+	font-size:0.48rem;
+	color:#41921A;
+	text-align:center;
+	padding:0;
+}
+.temp3c-table table>tbody>tr>td{
+	padding:0;
+	border-top:0;
+}
+.temp3c-table table>tbody>tr>td:first-child{
+	width:23%;
+	text-align:left;
+}
+.temp3c-table table>tbody>tr>td:nth-of-type(2){
+	width:33%;
+	text-align:center;
+}
+.temp3c-table table>tbody>tr>td:nth-of-type(3) input,.temp3c-table table>tbody>tr>td:nth-of-type(3) textarea{
+	text-align:left;
+}
+.yqh-temp4{
+	background:url(../images/yqh/ymark4.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp4 .secInfo{
+	width:90%;
+	left:5%;
+	bottom:1.73rem;
+	color:#4c4c4c;
+}
+.yqh-temp4 .secInfo h3{
+	font-size:0.6rem;
+	margin-bottom:0.3rem;
+}
+.yqh-temp4 .secInfo p{
+	font-size:0.48rem;
+	line-height:1.6;
+	text-align:center;
+}
+.yqh-temp4b{
+	background:url(../images/yqh/hello4.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp4b .secInfo{
+	width:6.4rem;
+	left:0.6rem;
+	top:3.4rem;
+	font-size:0.36rem;
+	color:#282828;
+	line-height:1.7;
+}
+.yqh-temp4c{
+	background:url(../images/yqh/contact4.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp4c .contactInfo,.yqh-temp6c .contactInfo{
+	color:#282828;
+}
+.yqh-temp4c .contactInfo p a.btn{
+	background:#000;
+	opacity:0.4;
+}
+.yqh-temp5{
+	background:url(../images/yqh/ymark5.png) no-repeat;
+	background-size:cover;
+	padding:0 0.3rem;
+}
+.yqh-temp5 .logo{
+	position:absolute;
+	width:1.2rem;
+	height:1.2rem;
+	border-radius:50%;
+	top:1.6rem;
+}
+.yqh-temp5 .title{
+	position:absolute;
+	width:3.6rem;
+	font-size:0.6rem;
+	color:#fff;
+	bottom:4.02rem;
+	left:50%;
+	margin-left:-1.8rem;
+	font-family:¿¬Ìå;
+	text-align:center;
+}
+.yqh-temp5 .secInfo{
+	bottom:0.77rem;
+	left:0;
+	font-size:0.48rem;
+	font-family:¿¬Ìå;
+	color:#7A5C36;
+}
+.yqh-temp5 .secInfo span{
+	margin-left:0.1rem;
+}
+.yqh-temp5b{
+	padding:0 0.3rem;
+	background:url(../images/yqh/hello5.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp5b .title{
+	position:absolute;
+	top:2.04rem;
+	font-family: ¿¬Ìå;
+	color:#7A5C36;
+}
+.yqh-temp5b .title h3{
+	font-size:0.6rem;
+}
+.yqh-temp5b .title span{
+	font-size:0.36rem;
+	font-family: ArialMT;
+}
+.yqh-temp5b .secInfo{
+	width:4.4rem;
+	font-size:0.28rem;
+	color:#7a5c36;
+	top:3.6rem;
+	left:50%;
+	margin-left:-2.2rem;
+	font-family:SimSun-ExtB;
+	text-align:left;
+	line-height:1.4;
+}
+.yqh-temp5b .secInfo p:last-child{
+	text-indent:0.6rem;
+}
+.yqh-temp5c{
+	background:url(../images/yqh/contact5.png) no-repeat;
+	background-size:cover;
+	padding:0 0.33rem;
+}
+.yqh-temp5c .secInfo{
+	display:table;
+	bottom:0.9rem;
+}
+.yqh-temp5c .secInfo p{
+	display:inline-block;
+	padding:0.1rem;
+	width:4rem;
+	height:0.7rem;
+	font-size:0.34rem;
+	color:#282828;
+	text-align:center;
+	background: #7DCEF4;
+	margin-top:0.2rem;
+	border-radius:0.2rem;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.yqh-temp5c>h3{
+	position:absolute;
+	bottom:8.6rem;
+	right:0.3rem;
+	width:1.5rem;
+	text-align:center;
+	font-size:0.6rem;
+	color:#7A5C36;
+	padding-bottom:0.1rem;
+	border-bottom:7px solid #7DCEF4;
+}
+.yqh-temp6{
+	background:url(../images/yqh/ymark6.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp6 .secInfo{
+	font-family: DengXian-Regular;
+	bottom:3.55rem;
+}
+.yqh-temp6 .secInfo h3{
+	color:#DE102A;
+	font-size:0.8rem;
+}
+.yqh-temp6 .secInfo p{
+	color:#808080;
+	font-size:0.3rem;
+	width:5.4rem;
+	padding:0.1rem 0;
+	margin:0.1rem auto;
+	letter-spacing: 0.3rem;
+}
+.yqh-temp6 .secInfo p:nth-of-type(1){
+	border-top:1px solid #808080;
+	border-bottom:1px solid #808080;
+}
+.yqh-temp6b{
+	background:url(../images/yqh/hello6.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp6b .gsImg{
+	position:absolute;
+	top:3.52rem;
+	left:0.24rem;
+	overflow:hidden;
+}
+.yqh-temp6b .gsImg li{
+	width:3.43rem;
+	height:2.11rem;
+	margin-bottom:0.2rem;
+	border-radius:8%;
+	background: #D00000;
+}
+.yqh-temp6b .gsImg li img{
+	width:100%;
+	height:100%;
+	border-radius:8%;
+}
+.yqh-temp6b .secInfo{
+	max-width:3.48rem;
+	top:2.1rem;
+	left:53%;
+	color:#fff;
+}
+.yqh-temp6b .secInfo h3{
+	width:0.48rem;
+	font-size:0.48rem;
+	line-height:1.2;
+	float:right;
+	margin:0 0.1rem;
+}
+.yqh-temp6b .secInfo p{
+	font-size:0.36rem;
+	writing-mode: rl-tb;
+	width:0.36rem;
+	height:7.5rem;
+	float:right;
+	margin:2rem 0.1rem 0;
+	line-height:1.6;
+	overflow:hidden;
+}
+.yqh-temp6c{
+	background:url(../images/yqh/contact6.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp6c .contactInfo a.btn{
+	background:#D00000;
+}
+.yqh-temp7{
+	background:url(../images/yqh/ymark7.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp7b{
+	background:url(../images/yqh/hello7.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp7b .secInfo{
+	top:3.5rem;
+	margin-left:0.8rem;
+	width:5.84rem;
+	font-family:MFQingShu_Noncommercial-Regular;
+	color:#fff;
+	font-size:0.42rem;
+	line-height:2;
+	text-align:left;
+}
+.yqh-temp7c{
+	background:url(../images/yqh/contact7.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp7c .secInfo{
+	width:94%;
+	top:3.5rem;
+	left:3%;
+}
+.yqh-temp7c .secInfo>img{
+	width:100%;
+	height:4.6rem;
+	margin-bottom:0.98rem;
+}
+.yqh-temp7c .secInfo p{
+	color:#282828;
+	font-size:0.48rem;
+	text-align:left;
+}
+.yqh-temp8{
+	background:url(../images/yqh/ymark8.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp8 .title{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:2.8rem;
+	font-size:0.36rem;
+	color:#282828;
+}
+.yqh-temp8b{
+	background:#fafafa;
+	padding:0.4rem;
+}
+.yqh-temp8b .title{
+	width:100%;
+	text-align:center;
+	line-height:2;
+	font-size:0.44rem;
+	border-bottom:1px dashed #000;
+	font-family:DengXian-Regular;
+	margin-top:1.2rem;
+}
+.yqh-temp8b .mainWord{
+	font-size:0.36rem;
+	line-height:1.8;
+	width:94%;
+	margin:0.3rem 3%;
+	overflow:hidden;
+}
+.yqh-temp8b .mainWord .iconfont{
+	display:block;
+	width:5%;
+	color:#236596;
+	text-shadow:2px 5px 8px #174364;
+	float:left;
+	margin-right:2%;
+}
+.yqh-temp8b .mainWord p{
+	width:93%;
+	float:right;
+}
+.yqh-temp9{
+	background:url(../images/yqh/ymark9.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp9b{
+	background:url(../images/yqh/hello9.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp9b .secInfo{
+	width:4.78rem;
+	max-height:8rem;
+	left:50%;
+	margin-left:-2.39rem;
+	top:2.8rem;
+	color:#fff;
+	font-size:0.46rem;
+	line-height:1.8;
+	text-align: left;
+	font-family:MFQingShu_Noncommercial-Regular;
+	overflow:hidden;
+}
+.yqh-temp9c{
+	background:url(../images/yqh/contact9.png) no-repeat;
+	background-size:cover;
+	padding-top:2.76rem;
+}
+.yqh-temp9c .mainWord{
+	color:#fff;
+	font-size:0.46rem;
+	margin:0;
+	font-family:DengXian-Regular;
+}
+.yqh-temp10{
+	background:url(../images/yqh/ymark10.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp10b{
+	background:url(../images/yqh/hello10.png) no-repeat;
+	background-size:cover;
+}
+.yqh-temp10b .secInfo{
+	width:4.8rem;
+	left:50%;
+	margin-left:-2.4rem;
+	font-size:0.36rem;
+	line-height:2;
+	color:#114A78;
+	top:3.5rem;
+	text-align:left;
+}
+.yqh-temp10c{
+	background:url(../images/yqh/contact10.png) no-repeat;
+	background-size:cover;
+	padding-top:2.8rem;
+}
+.yqh-temp10c .mainWord{
+	font-size:0.42rem;
+	color:#fff;
+	margin:0;
+}
+/*邀请函模板编辑的预览页面*/
+.ylshare{
+	font-size:0.6rem;
+	color:#eee;
+	position:absolute;
+	left:2%;
+	bottom:2%;
+	z-index:200;
+}
+/*邀请函提示可编辑动画*/
+.yqh-temp input,.yqh-temp textarea,.keyImg img{
+	animation:mymove 3s linear;
+    -webkit-animation:mymove 3s linear;
+    -moz-animation:mymove 3s linear;
+    -o-animation:mymove 3s linear;
+}
+@keyframes mymove{
+	0%{
+		border:none;
+	}
+	50%{
+		border:1px solid #ff4aff;
+	}
+	100%{
+		border:none;
+	}
+}
+@-moz-keyframes mymove{
+	0%{
+		border:none;
+	}
+	50%{
+		border:1px solid #ff4aff;
+	}
+	100%{
+		border:none;
+	}
+}
+@-webkit-keyframes mymove{
+	0%{
+		border:none;
+	}
+	50%{
+		border:1px solid #ff4aff;
+	}
+	100%{
+		border:none;
+	}
+}
+@-o-keyframes mymove{
+	0%{
+		border:none;
+	}
+	50%{
+		border:1px solid #ff4aff;
+	}
+	100%{
+		border:none;
+	}
+}
+.fixedBtmBar .disabled{
+	background-color: #FBFBFB;
+    color: #C9C9C9;
+}

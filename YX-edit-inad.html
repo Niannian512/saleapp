@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>营销-编辑-插广告</title>
+	</head>
+
+	<body style="background:#eee;">
+		<div class="container">
+		<!--公共的title-->
+			<header class="topbar">
+				<a id="hdId" onclick='goBack()' href="javascript:;" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">编辑广告</span>
+				<i class="pull-right">保存</i>
+			</header>
+			<section class="templet mt30">
+				<!--模板title-->
+				<div class="itemTitle">
+					<h4>第一模板<span></span></h4>
+				</div>
+				<!--模板内容-->
+				<div class="tempWrap">
+					<div class="twBgWrap clearfix">
+						<div class="twBgMask"></div>
+						<div class="left">
+							<h4>最强团队文化展示大赛</h4>
+							<p>最强团队文化展示大赛</p>
+						</div>
+						<div class="right">
+							<img src="images/td_03.png" alt="" />
+						</div>
+				    </div>
+				    <p class="clickTotal">点击量<span>10</span></p>
+				</div>
+			</section>
+			<!--模板-->
+			<section class="templet mt30">
+				<!--模板title-->
+				<div class="itemTitle">
+					<h4>优秀模板<span></span></h4>
+				</div>
+				<!--模板内容-->
+				<div class="tempWrap">
+					<div class="twBgWrap clearfix">
+						<div class="twBgMask"></div>
+						<div class="left">
+							<h4>最强团队文化展示大赛</h4>
+							<p>最强团队文化展示大赛</p>
+						</div>
+						<div class="right">
+							<img src="images/td_03.png" alt="" />
+						</div>
+				    </div>
+				    <p class="clickTotal">点击量<span>10</span></p>
+				</div>
+			</section>				
+		</div>
+		<script>
+			$(function(){
+                //模板选择交互样式
+				$(".templet").click(function(){
+					var ele=$(this).find(".itemTitle h4 span");
+					if(ele.hasClass('checkTemp')){
+						ele.removeClass('checkTemp');
+					}else{
+						ele.addClass('checkTemp').parents(".templet").siblings(".templet").find(".itemTitle h4 span").removeClass('checkTemp');
+					}
+				})
+			 })
+		</script>
+	</body>
+</html>
+                

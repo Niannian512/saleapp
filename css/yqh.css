@@ -1,0 +1,306 @@
+/*邀请函编辑信息页面*/
+.yqhedit{
+	width:100%;
+	padding:0 0.2rem;
+	background:#fff;
+	margin-bottom:0.1rem;
+}
+.yqhedit .form-group{
+	padding:0.3rem 0;
+	border-bottom:1px solid #ddd;
+	margin-bottom:0;
+	clear:both;
+}
+.yqhedit .form-group:last-child{
+	border:none;
+}
+.yqhedit .form-group>label{
+	width:20%;
+	float:left;
+	font-size:0.28rem;
+	color:#333;
+	border-right:1px solid #333;
+}
+.yqhedit .form-group>input,.yqhedit .form-group>textarea{
+	width:80%;
+	border:none;
+	resize:none;
+	outline:none;
+	padding-left:0.25rem;
+	font-size:0.28rem;
+}
+.yqhedit .form-group>textarea{
+	height:4rem;
+	line-height:1.8;
+}
+.yqhedit .form-group table{
+	width:80%;
+}
+.yqhedit .form-group table input{
+	border:none;
+	border-bottom:1px solid #ddd;
+}
+.yqhedit .form-group table td{
+	padding:0 0 0.25rem 0;
+}
+.yqhedit .form-group table td:nth-of-type(odd){
+	padding-left:0.25rem;
+}
+.yqhedit .form-group table td:nth-of-type(odd) input{
+	width:1.2rem;
+}
+.yqhedit .form-group table td:nth-of-type(even) input{
+	width:2rem;
+}
+.stepCtr .btn{
+	width:0.7rem;
+	height:0.7rem;
+	padding:0;
+	text-align: center;
+	border-radius:0.1rem;
+	background:#999;
+	border:none;
+	font-size:0.36rem;
+	color:#fff;
+}
+.stepCtr .btn:last-child{
+	background:#ff8f16;
+	margin-left:0.25rem;
+}
+.yqhedit .form-group a.jump{
+	color:#aaa;
+	font-size:0.28rem;
+	padding-left:0.25rem;
+}
+.choseTemp{
+	text-align:center;
+	margin:0.4rem auto;
+}
+.choseTemp .btn{
+	padding:0.2rem 0.75rem;
+	background:#ff8f16;
+	color:#fff;
+	font-size:0.32rem;
+}
+/*邀请函模板公共部分*/
+.commonWrap{
+	position:relative;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+}
+/*上滑翻页动态效果*/
+.u-arrow {
+    position: fixed;
+    bottom: 0.2rem;
+    left: 50%;
+    z-index: 999;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: -0.4rem;
+    text-align: center;
+}
+.u-arrow i {
+	display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.5rem 0 0 -0.4rem;
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size:0.8rem;
+    color:#eee;
+    -webkit-animation: start 1.3s infinite ease-in-out;
+    -moz-animation: start 1.3s infinite ease-in-out;
+    animation: start 1.3s infinite ease-in-out;
+}
+@-webkit-keyframes start{
+	from{margin: -0.5rem 0 0 -0.4rem;}
+	to{margin: -0.7rem 0 0 -0.4rem;}
+}
+@-moz-keyframes start{
+	from{margin: -0.5rem 0 0 -0.4rem;}
+	to{margin: -0.7rem 0 0 -0.4rem;}
+}
+@keyframes start{
+	from{margin: -0.5rem 0 0 -0.4rem;}
+	to{margin: -0.7rem 0 0 -0.4rem;}
+}
+.musicCtr{
+	position:fixed;
+	top:0.3rem;
+	right:0.38rem;
+	z-index:999;
+	animation:rotation 2s linear infinite;
+}
+/*邀请函模板一*/
+.onePage{
+	position:relative;
+	width:100%;
+	height:100%;
+	background:url(../images/yqh-v2/yqh_sswy_bj@2x.png) no-repeat;
+	background-size:100% 100%;
+}
+.onePage .top,.onePage .middle,.onePage .bottom{
+	position:absolute;
+	width:100%;
+}
+.onePage .top{
+	top:0;
+	right:0;
+	text-align:right;
+	animation:rlflyImg 1.2s linear;
+}
+@keyframes rlflyImg{
+	from{top:0;right:-1000px;}
+	to{top:0;right:0;}
+}
+.onePage .middle{
+	width:100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);/*ie9*/
+	-moz-transform:translate(-50%,-50%);/*火狐*/
+	-webkit-transform:translate(-50%,-50%);/*safari和chrome*/
+	-o-transform:translate(-50%,-50%);/*opera*/
+	text-align:center;
+	animation:fadeImg 1.2s;
+}
+@keyframes fadeImg{
+	0%{opacity:0;left:0;top:0;}
+	100%{opacity:1;left:50%;top:50%;}
+}
+.onePage .middle .title{
+	font-size:0.26rem;
+	color:#0c4a1b;
+	margin-top:0.1rem;
+}
+.onePage .middle .title span{
+	margin:0 0.1rem;
+}
+.onePage .bottom{
+	left:0;
+	bottom:0;
+	animation:lrflyImg 1.2s;
+}
+@keyframes lrflyImg{
+	from{left:-1000px;bottom:0;}
+	to{left:0;bottom:0;}
+}
+.onePage .bottom .txt{
+	position:absolute;
+	bottom:-0.2rem;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+	z-index:998;
+	color:#fff;
+	font-size:0.3rem;
+}
+.twoPage .middle{
+	min-height:7rem;
+	padding:0 0.66rem;
+	color:#021e07;
+}
+.twoPage .middle .main h3{
+	font-size:0.36rem;
+	line-height:2;
+	font-weight:bold;
+}
+.twoPage .middle .main p{
+	font-size:0.32rem;
+	text-indent:0.64rem;
+	line-height:1.8;
+}
+.twoPage .middle .moduleInfo{
+	position:absolute;
+	right:0.66rem;
+	bottom:0;
+}
+.twoPage .middle .moduleInfo p{
+	font-size:0.26rem;
+	color:#011e0a;
+	line-height:2;
+	text-align: right;
+}
+.activeStep{
+	max-height:7rem;
+	color:#001904;
+	overflow-y:scroll;
+}
+.activeStep dt{
+	font-size:0.4rem;
+	margin-bottom:0.5rem;
+}
+.activeStep dt span{
+	margin:0 0.1rem;
+}
+.activeStep dd{
+	font-size:0.3rem;
+	line-height:2.5;
+}
+.fourPage .activeStep dd{
+	width:4.3rem;
+	height:0.86rem;
+	padding:0 0.2rem;
+	background:rgba(0,0,0,0.3);
+	border-radius:0.1rem;
+	font-size:0.32rem;
+	color:#fff;
+	text-align:left;
+	margin:0.2rem auto;
+}
+.fourPage .activeStep dd:nth-of-type(3){
+	height:2.56rem;
+}
+.fourPage .activeStep dd:nth-of-type(3) textarea{
+	resize:none;
+	line-height: 1.6;
+	padding-top:0.16rem;
+}
+.fourPage .activeStep dd:last-child{
+	background:#39aa3f;
+}
+.fourPage .activeStep dd:last-child input{
+	width:100%;
+	font-size:0.36rem;
+}
+.fourPage .activeStep dd label{
+	width:25%;
+	float:left;
+}
+.fourPage .activeStep dd input,.fourPage .activeStep dd textarea{
+	width:75%;
+	height:100%;
+	background:none;
+	border:none;
+	outline:none;
+}
+.fivePage{
+	background:#f2f2f2;
+	padding:0.86rem 0.7rem;
+	text-align:center;
+}
+.fivePage>h3{
+	font-size:0.44rem;
+	color:#011e0a;
+	height:1.7rem;
+	line-height:1.7rem;
+	border-bottom:2px solid #ddd;
+}
+.fivePage a.bottom{
+	display:block;
+	bottom:0.86rem;
+}
+.fivePage .bottom>p{
+	position:absolute;
+	font-size:0.32rem;
+	color:#011e0a;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}

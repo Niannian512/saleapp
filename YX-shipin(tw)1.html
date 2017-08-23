@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>营销-视频1</title>
+	</head>
+	<body style="background:#eee;">
+		<div class="container">
+			<div class="videoWrap">
+				<video poster="images/td_03.png" x-webkit-airplay="true" webkit-playsinline="true" id="myVideo" onclick="playPause()">
+				    <source src="music/happyfit2.mp4" type="video/mp4" />
+				    <source src="music/happyfit2.ogv" type="video/ogg" />
+				    <source src="music/happyfit2.webm" type="video/webm" />
+				          你浏览器不支持此格式的文件
+				</video>
+				<img src="images/play_03.png" alt="" class="switchIcon" onclick="playPause()"/>
+			</div>
+			<section class="fixedAdBar">
+				<div class="twBgWrap clearfix">
+					<div class="twBgMask"></div>
+					<div class="left">
+						<!--主副标题可以至少选一个（不需要的注释就好）-->
+						<h4>最强团队文化展示大赛</h4>
+						<p>最强团队文化展示大赛</p>
+					</div>
+					<!--右侧图片可有可无-->
+					<div class="right">
+						<img src="images/td_03.png" alt="" />
+					</div>
+				</div>
+			</section>
+		</div>
+		<script>
+//			视频播放
+			function playPause() {
+				var obj=document.getElementById("myVideo");
+				var switchBtn=document.getElementsByClassName("switchIcon")[0];
+						if(obj.paused) {
+							obj.play();
+							switchBtn.style.display='none';
+						} else {
+							obj.pause();
+							obj.load();
+							switchBtn.style.display='block';
+						}
+					}
+		</script>
+	</body>
+</html>

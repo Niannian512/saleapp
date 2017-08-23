@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>营销-视频-编辑广告</title>
+	</head>
+	<body style="background:#eee;">
+		<div class="container">
+			<!--公共的title-->
+			<header class="topbar">
+				<a id="hdId" onclick='goBack()' href="javascript:;" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">编辑广告</span>
+				<i class="pull-right">保存</i>
+			</header>
+			<!--navtab切换导航-->
+			<section class="firstLevelTab">
+				<ul class="nav nav-tabs firstTab" id="firstTab">
+					<li><a href="#text" data-toggle="tab">文字</a></li>
+					<li><a href="#pic" data-toggle="tab">图片</a></li>
+					<li><a href="#ad" data-toggle="tab">广告</a></li>
+					<li class="active"><a href="#ercode" data-toggle="tab">二维码</a></li>
+				</ul>
+				<div class="tab-content mt30">
+					<div class="tab-pane fade" id="text">
+						<textarea class="someWord" placeholder="请输入..."></textarea>
+						<p class="checkBg mt30" onclick="location.href='YX-shipin-edit-bj.html'"><i class="iconfont icon-bj"></i>选择背景<span class="pull-right">背景名字<i class="iconfont icon-arrowrh"></i></span></p>
+					</div>
+					<div class="tab-pane fade" id="pic">
+						<div class="uploadImg">
+							<img src="images/shangchuan@3x.png" alt="" />
+							<span>上传图片</span>
+							<input type="file" />
+						</div>
+						<input type="text"  class="website mt30" placeholder="输入网址"/>
+					</div>
+					<div class="tab-pane fade" id="ad">
+						<!--模板-->
+						<section class="templet mt30">
+							<!--模板title-->
+							<div class="itemTitle">
+								<h4>第一模板<span></span></h4>
+							</div>
+							<!--模板内容-->
+							<div class="tempWrap">
+								<div class="twBgWrap clearfix">
+									<div class="twBgMask"></div>
+									<div class="left">
+										<h4>最强团队文化展示大赛</h4>
+										<p>最强团队文化展示大赛</p>
+									</div>
+									<div class="right">
+										<img src="images/td_03.png" alt="" />
+									</div>
+							    </div>
+							    <p class="clickTotal">点击量<span>10</span></p>
+							</div>
+						</section>
+						<!--模板-->
+						<section class="templet mt30">
+							<!--模板title-->
+							<div class="itemTitle">
+								<h4>第二模板<span></span></h4>
+							</div>
+							<!--模板内容-->
+							<div class="tempWrap">
+								<div class="twBgWrap clearfix">
+									<div class="twBgMask"></div>
+									<div class="left">
+										<h4>最强团队文化展示大赛</h4>
+										<p>最强团队文化展示大赛</p>
+									</div>
+									<div class="right">
+										<img src="images/td_03.png" alt="" />
+									</div>
+							    </div>
+							    <p class="clickTotal">点击量<span>10</span></p>
+							</div>
+						</section>
+					</div>
+					<div class="tab-pane fade in active" id="ercode">
+						<section class="showArea">
+							<!--字左码右-->
+							<div class="uploadCode clearfix">
+								<div class="text pull-right">
+									<textarea class="someWord" placeholder="请输入..."></textarea>
+								</div>
+								<div class="uploadImg ercode">
+									<img src="images/baishangchuan@2x.png" alt="" />
+									<span>上传图片</span>
+									<input type="file" />
+								</div>
+							</div>
+							<!--字右码左-->
+							<div class="uploadCode clearfix" style="display:block;">
+								<div class="text pull-left">
+									<textarea class="someWord" placeholder="请输入..."></textarea>
+								</div>
+								<div class="uploadImg ercode">
+									<img src="images/baishangchuan@2x.png" alt="" />
+									<span>上传图片</span>
+									<input type="file" />
+								</div>
+							</div>
+						</section>
+						
+						<div class="switchStyle">
+							<h4><i class="iconfont icon-float"></i>浮动展示方式</h4>
+							<p>图左字右<span class="iconfont icon-unselect"></span></p>
+							<p>图右字左<span class="iconfont icon-select"></span></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script>
+			$(function(){
+                //模板选择交互样式
+				$(".templet").click(function(){
+					var ele=$(this).find(".itemTitle h4 span");
+					if(ele.hasClass('checkTemp')){
+						ele.removeClass('checkTemp');
+					}else{
+						ele.addClass('checkTemp').parents(".templet").siblings(".templet").find(".itemTitle h4 span").removeClass('checkTemp');
+					}
+				})
+				//浮动展示切换样式
+				$(".switchStyle p").click(function(){
+					var index=$(this).index()-1;
+					//alert(index);
+					var ele=$(this).find('span');
+				    if(ele.hasClass('icon-select')){
+				    	ele.removeClass('icon-select').addClass('icon-unselect');
+				    }else{
+				    	ele.addClass('icon-select').parent('p').siblings('p').find('span').removeClass('icon-select');
+				    	$(".uploadCode").eq(index).show().siblings(".uploadCode").hide();
+				    }
+				})
+				
+			
+			
+			})
+		</script>
+	</body>
+</html>

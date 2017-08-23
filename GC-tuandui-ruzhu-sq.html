@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>广场-团队-入驻-提交申请</title>
+	</head>
+	<body  style="background:#f2f2f2;">
+		<div class="container">
+			<!--公共的title-->
+			<header class="topbar">
+				<a id="hdId" onclick='goBack()' href="javascript:;" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">提交申请</span>
+			</header>
+			<form action="title" method='post' name='baseInfo'>
+				<section class="jiaMInfo rzsqInfo">
+					<ul>
+						<li>
+							<i class="iconfont icon-qiye"></i><input type="text" class="shamInput" placeholder="入驻团队名称" oninvalid="setCustomValidity('请输入1-40个字符');" oninput="setCustomValidity('');"  required/>
+						</li>
+						<li>
+							<i class="iconfont icon-user"></i><input type="text" class="shamInput" placeholder="申请人姓名" oninvalid="setCustomValidity('请输入1-20个字符');" oninput="setCustomValidity('');" required/>
+						</li>
+						<li>
+							<i class="iconfont icon-shouji"></i><input type="text" class="shamInput" placeholder="申请人联系方式" pattern="^1[345678][0-9]{9}$" oninvalid="setCustomValidity('请输入正确的手机号码');" oninput="setCustomValidity('');" required/>
+						</li>
+						<li class="rzsq td">
+							<i class="iconfont icon-userid"></i>手持身份证照
+							<div class="sczzBtn">
+								<img src="images/baishangchuan@2x.png" alt="" />
+								<span>上传图片</span>
+							    <input type="file" class="shamInput" placeholder=""/>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<div class="largeBtn"><button type="submit" class="btn btn-block">提交</button></div>
+			</form>
+		</div>
+	</body>
+</html>

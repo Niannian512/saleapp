@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<title>营销-视频2</title>
+	</head>
+	<body style="background:#eee;">
+		<div class="container">
+			<div class="videoWrap">
+				<video poster="images/td_03.png" x-webkit-airplay="true" webkit-playsinline="true" id="myVideo" onclick="playPause()">
+				    <source src="music/happyfit2.mp4" type="video/mp4" />
+				    <source src="music/happyfit2.ogv" type="video/ogg" />
+				    <source src="music/happyfit2.webm" type="video/webm" />
+				          你浏览器不支持此格式的文件
+				</video>
+				<img src="images/play_03.png" alt="" class="switchIcon" onclick="playPause()"/>
+			</div>
+			<!--二维码形式-码左字右-->
+			<!--<section class="fixedAdBar">
+				<div class="ercodeWrap clearfix">
+					<div class="code pull-left">
+						<img src="images/erweima@3x.png" alt="" />
+					</div>
+					<div class="text pull-right">
+						<p>戴上耳机，整个世界都是你的。。。戴上耳机，整个世界都是你的</p>
+					</div>
+				</div>
+			</section>-->
+			<!--二维码形式-码右字左-->
+			<section class="fixedAdBar">
+				<div class="ercodeWrap clearfix">
+					<div class="text pull-left">
+						<p>戴上耳机，整个世界都是你的。。。戴上耳机，整个世界都是你的</p>
+					</div>
+					<div class="code pull-right">
+						<img src="images/erweima@3x.png" alt="" />
+					</div>
+				</div>
+			</section>
+		</div>
+		<script>
+//			视频播放
+			function playPause() {
+				var obj=document.getElementById("myVideo");
+				var switchBtn=document.getElementsByClassName("switchIcon")[0];
+						if(obj.paused) {
+							obj.play();
+							switchBtn.style.display='none';
+						} else {
+							obj.pause();
+							obj.load();
+							switchBtn.style.display='block';
+						}
+					}
+		</script>
+	</body>
+</html>

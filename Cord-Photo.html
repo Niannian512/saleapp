@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/active.css">
+		<link rel="stylesheet" type="text/css" href="css/generalie.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/rem-font-size.js"></script>
+		<script type="text/javascript" src="js/file.js"></script>
+		<title>推广-名片</title>
+	</head>
+
+	<body>
+		<div class="container Name-bg">
+			<!--公共的title-->
+			<header class="topbar">
+				<a href="##" class="iconfont icon-arrowlf btn_back pull-left"></a>
+				<span class="title">联系方式</span>
+
+			</header>
+
+			<form action="">
+				<input type="text" class="Name-input" placeholder="请输入您的联系方式" id="photo" />
+				<input type="button" class="save" value="保存" onclick="checkall()" />
+			</form>
+			<script>
+				function checkall() {
+					var photo = $("#photo").val();
+					var reg2 = /^\d{8,12}$/;
+					if(photo == "" || !reg2.test(photo)) {
+						alert('请输入8—12位的数字哦!');
+					} else {
+						$(this).submit();
+					}
+				}
+			</script>
+
+		</div>
+	</body>
+
+</html>
